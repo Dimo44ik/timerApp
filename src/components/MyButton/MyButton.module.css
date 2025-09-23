@@ -1,0 +1,15 @@
+.myBtn {
+    padding: 5px 15px;
+    margin: 10px;
+    color:white;
+    font-size: 15px;
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 50px;
+}
+
+.myBtn:active {
+    background: transparent;
+}
