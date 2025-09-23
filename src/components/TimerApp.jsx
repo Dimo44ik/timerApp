@@ -31,7 +31,7 @@ export default function TimerApp() {
 
     return (
         <>
-        <div className={cl.containerTimer}>
+        <div className={cl.container_timer}>
             <h1 style={{margin: '15px'}}>Таймер</h1>
             <h2 style={{margin: '15px'}}>{formatTime(count)}</h2>
             <div>
