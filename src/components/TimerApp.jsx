@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import cl from './TimerApp.module.css'
-import MyButton from './MyButton/MyButton'
+import Button from './Button/Button'
 
 export default function TimerApp() {
     const [count, setCount] = useState(0)
@@ -30,16 +30,14 @@ export default function TimerApp() {
     }
 
     return (
-        <>
         <div className={cl.container_timer}>
             <h1 style={{margin: '15px'}}>Таймер</h1>
             <h2 style={{margin: '15px'}}>{formatTime(count)}</h2>
             <div>
-                <MyButton onClick={handleStart}>Запуск</MyButton>
-                <MyButton onClick={handleStop}>Стоп</MyButton>
-                <MyButton onClick={handleReset}>Сбросить</MyButton>
+                <Button onClick={handleStart}>Запуск</Button>
+                <Button onClick={handleStop}>Стоп</Button>
+                <Button onClick={handleReset}>Сбросить</Button>
             </div>
         </div>
-        </>
     )
 }
