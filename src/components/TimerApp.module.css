@@ -3,10 +3,5 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
-}
-@media (max-width: 992px) {
-    .container_timer {
-        min-height: 90vh;
-    }
+    height: 100dvh;
 }
